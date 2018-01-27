@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="manzanofluxing.lectorqrfluxing.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+     <!--RFC Emisor-->
+    <TextView
+        android:id="@+id/RFCEmisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFC Emisor :"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="26dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/EditRFCEmisor"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/EditRFCEmisor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/RFCReceptor"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="21dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/RFCEmisor"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.32" />
+    <!-- Fin RFC Emisor-->
+
+    <!--RFC Receptor-->
+    <TextView
+        android:id="@+id/RFCReceptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFC Receptor :"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="102dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/EditRFCReceptor"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/EditRFCReceptor"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/EditRFCEmisor"
+        android:layout_marginTop="43dp"
+        app:layout_constraintTop_toBottomOf="@+id/EditRFCEmisor"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/EditRFCEmisor"
+        app:layout_constraintHorizontal_bias="0.0" />
+    <!-- Fin RFC Receptor-->
+
+    <!--Monto-->
+    <TextView
+        android:id="@+id/Monto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto :"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/EditRFCReceptor"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/EditMonto" />
+    <EditText
+        android:id="@+id/EditMonto"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/EditFolio"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/EditRFCReceptor"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.347" />
+    <!-- FinMonto-->
+
+    <!--Folio -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folio Fiscal :"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="63dp"
+        app:layout_constraintTop_toBottomOf="@+id/Monto"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/EditFolio" />
+    <EditText
+        android:id="@+id/EditFolio"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:textSize="17dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="81dp"
+        app:layout_constraintTop_toBottomOf="@+id/Monto"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.347" />
+    <!--Fin Folio-->
+
+    <!--Rubro-->
+    <TextView
+        android:id="@+id/Rubro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Rubro :"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinnerRubro"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Spinner
+        android:id="@+id/spinnerRubro"
+        android:layout_width="284dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonEscaner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/Rubro"
+        app:layout_constraintRight_toRightOf="@+id/ButtonEscaner"
+        app:layout_constraintTop_toBottomOf="@+id/EditFolio"
+        app:layout_constraintVertical_bias="0.326"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+    <!--Fin Rubro-->
+
+    <!--Ver Historial-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ButtonHistorial"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:onClick="BtnHistorial"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRubro"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/historialmedico"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+    <!--Fin Historial-->
+
+    <!--Boton Escanear-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ButtonEscaner"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:clickable="true"
+        android:onClick="EscanerQR"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/escaner"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonGuardar"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.501" />
+    <!-- Fin Boton Escanear-->
+
+    <!-- Boton Guardar-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ButtonGuardar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:onClick="GuardarSQL"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/bottonguardar"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="30dp" />
+
+    <!-- Fin Boton Guardar-->
+
+
+
+
+</android.support.constraint.ConstraintLayout>
